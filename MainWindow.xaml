@@ -1,0 +1,17 @@
+﻿<Window x:Class="Lab_3_1_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab_3_1_"
+        mc:Ignorable="d"
+        Title="Simple Stop Watch" Height="350" Width="525">
+    <Grid>
+        <TextBlock FontSize="50" Margin="122,0,110,246" RenderTransformOrigin="1.443,0.195" Text="Cекундомір"/>
+        <TextBlock x:Name="timer" FontSize="70" Margin="122,39,33,182"></TextBlock>
+        <Button x:Name="startbtn" Margin="38,137,335,126" Background="SkyBlue" Content="Запустити" FontSize="30" Click="startbtn_Click" ></Button>
+        <Button x:Name="stopbtn" Margin="187,137,180,126" Background="SkyBlue" Content="Зупинити" FontSize="30" Click="stopbtn_Click" ></Button>
+        <Button x:Name="resetbtn" Margin="342,137,33,126" Background="SkyBlue" Content="Скинути" FontSize="30" Click="resetbtn_Click" />
+        <ListBox x:Name="recordtime" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="446" Margin="38,198,0,0"/>
+    </Grid>
+</Window>
